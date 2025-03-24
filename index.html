@@ -3,106 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Survivors - Epic Survival Action Game | Play Online</title>
-    <meta name="description" content="Play Monster Survivors online! An intense survival action game where you battle endless waves of monsters. Experience thrilling gameplay with unique abilities and upgrades.">
-    <link rel="canonical" href="https://hockeyshaft.com/monster-survivors" />
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Monster Survivors - Epic Survival Action Game">
-    <meta property="og:description" content="Battle endless waves of monsters in this thrilling survival action game. Upgrade your abilities and survive as long as you can!">
-    <meta property="og:url" content="https://hockeyshaft.com/monster-survivors">
-    <meta property="og:type" content="website">
+    <title>Monster Survivors - Action Survival Game | HockeyShaft</title>
+    <meta name="description" content="Play Monster Survivors, an exciting action survival game where you battle endless waves of monsters. Survive, upgrade, and conquer!">
+    <link rel="canonical" href="https://hockeyshaft.com/monster-survivors">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'apple-blue': '#007AFF',
-                        'apple-gray': '#8E8E93',
-                        'apple-black': '#1D1D1F'
+                        apple: {
+                            blue: '#007AFF',
+                            indigo: '#5856D6',
+                            purple: '#AF52DE',
+                            pink: '#FF2D55',
+                            red: '#FF3B30',
+                            orange: '#FF9500',
+                            yellow: '#FFCC00',
+                            green: '#34C759',
+                            teal: '#5AC8FA',
+                            gray: '#8E8E93',
+                            lightgray: '#F2F2F7',
+                            darkgray: '#1C1C1E'
+                        }
                     }
                 }
             }
         }
     </script>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Monster Survivors - Action Survival Game">
+    <meta property="og:description" content="Battle endless waves of monsters in this exciting action survival game. Upgrade your character and survive as long as possible!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hockeyshaft.com/monster-survivors">
+    <meta property="og:image" content="https://hockeyshaft.com/images/monster-survivors-cover.jpg">
 </head>
-<body class="bg-gray-50 text-apple-black">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <!-- Hero Section -->
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-apple-black">Monster Survivors</h1>
-            <p class="text-xl md:text-2xl text-apple-gray mb-8">Survive endless waves of monsters in this thrilling action-packed adventure!</p>
-        </header>
-
-        <!-- Game Container -->
-        <div class="relative w-full aspect-video mb-12 rounded-lg shadow-xl overflow-hidden">
-            <iframe 
-                src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
-                class="absolute top-0 left-0 w-full h-full border-0"
-                allowfullscreen
-                loading="lazy">
-            </iframe>
-        </div>
-
-        <!-- Game Information -->
-        <section class="grid md:grid-cols-2 gap-8 mb-12">
-            <div>
-                <h2 class="text-2xl font-bold mb-4 text-apple-blue">Game Overview</h2>
-                <p class="text-lg leading-relaxed mb-6">
-                    Monster Survivors is an intense survival action game where your skills and strategy determine how long you can last. Face increasingly challenging waves of monsters while collecting power-ups and upgrading your abilities.
-                </p>
+<body class="bg-apple-lightgray dark:bg-apple-darkgray text-gray-800 dark:text-white min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-apple-blue text-white p-4 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <a href="/" class="text-2xl font-bold hover:text-apple-yellow transition">HockeyShaft</a>
             </div>
-            <div>
-                <h2 class="text-2xl font-bold mb-4 text-apple-blue">Key Features</h2>
-                <ul class="list-disc list-inside text-lg space-y-2">
-                    <li>Endless survival gameplay</li>
-                    <li>Multiple character abilities</li>
-                    <li>Progressive difficulty system</li>
-                    <li>Power-up collection system</li>
-                    <li>Real-time combat mechanics</li>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="/" class="hover:text-apple-yellow transition">Home</a></li>
+                    <li><a href="/games" class="hover:text-apple-yellow transition">Games</a></li>
+                    <li><a href="/about" class="hover:text-apple-yellow transition">About</a></li>
+                    <li><a href="/contact" class="hover:text-apple-yellow transition">Contact</a></li>
                 </ul>
-            </div>
-        </section>
+            </nav>
+        </div>
+    </header>
 
-        <!-- How to Play -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-4 text-apple-blue">How to Play</h2>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <p class="text-lg leading-relaxed">
-                    Use WASD or arrow keys to move your character. Automatically attack nearby enemies and collect experience orbs to level up. Choose new abilities and upgrades as you progress. Survive as long as possible while facing increasingly difficult waves of monsters.
-                </p>
+    <!-- Main Content -->
+    <main class="container mx-auto flex-grow p-4">
+        <article class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 max-w-6xl mx-auto">
+            <!-- Game Title -->
+            <h1 class="text-4xl md:text-5xl font-bold text-apple-blue dark:text-apple-teal mb-4 text-center">Monster Survivors</h1>
+            
+            <!-- Game Introduction -->
+            <p class="text-xl text-center mb-8 text-apple-gray dark:text-gray-300">Survive endless waves of monsters in this thrilling action-packed survival game!</p>
+            
+            <!-- Game Iframe -->
+            <div class="w-full aspect-video mb-8 shadow-xl rounded-lg overflow-hidden">
+                <iframe 
+                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                    class="w-full h-full border-0"
+                    title="Monster Survivors Game"
+                    loading="lazy"
+                    allowfullscreen
+                ></iframe>
             </div>
-        </section>
-
-        <!-- Tips and Strategies -->
-        <section>
-            <h2 class="text-2xl font-bold mb-4 text-apple-blue">Tips for Success</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-3">Beginner Tips</h3>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>Keep moving to avoid enemy attacks</li>
-                        <li>Collect experience orbs whenever possible</li>
-                        <li>Choose complementary abilities</li>
+            
+            <!-- Game Description -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold text-apple-red dark:text-apple-pink mb-4">About Monster Survivors</h2>
+                <div class="prose dark:prose-invert max-w-none">
+                    <p class="mb-4">Monster Survivors is an action-packed survival game where your goal is simple: survive as long as possible against endless waves of monsters. As you progress, enemies become stronger and more numerous, testing your skills and strategy.</p>
+                    <p class="mb-4">Use your weapons and special abilities to defeat monsters, collect experience points, and upgrade your character's abilities. Each run is unique, with different power-ups and challenges to overcome.</p>
+                </div>
+            </section>
+            
+            <!-- Game Features -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold text-apple-green dark:text-apple-green mb-4">Game Features</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-apple-lightgray dark:bg-gray-800 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-apple-indigo dark:text-apple-purple mb-2">Endless Gameplay</h3>
+                        <p>Face increasingly difficult waves of monsters in a never-ending battle for survival.</p>
+                    </div>
+                    <div class="bg-apple-lightgray dark:bg-gray-800 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-apple-indigo dark:text-apple-purple mb-2">Character Progression</h3>
+                        <p>Level up and unlock powerful abilities and weapons to enhance your survival chances.</p>
+                    </div>
+                    <div class="bg-apple-lightgray dark:bg-gray-800 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-apple-indigo dark:text-apple-purple mb-2">Various Enemies</h3>
+                        <p>Battle against a diverse range of monsters, each with unique behaviors and attack patterns.</p>
+                    </div>
+                    <div class="bg-apple-lightgray dark:bg-gray-800 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-apple-indigo dark:text-apple-purple mb-2">Strategic Gameplay</h3>
+                        <p>Develop your strategy by choosing the right upgrades and positioning to maximize survival time.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- How to Play -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold text-apple-orange dark:text-apple-orange mb-4">How to Play</h2>
+                <div class="prose dark:prose-invert max-w-none">
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Use WASD or arrow keys to move your character</li>
+                        <li>Your character attacks automatically when enemies are in range</li>
+                        <li>Collect experience gems dropped by defeated monsters</li>
+                        <li>Level up to choose from various upgrades and new abilities</li>
+                        <li>Survive as long as possible and aim for a high score!</li>
                     </ul>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-3">Advanced Strategies</h3>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>Plan your upgrade path</li>
-                        <li>Manage crowd control abilities</li>
-                        <li>Learn enemy patterns</li>
+            </section>
+            
+            <!-- Tips & Strategies -->
+            <section>
+                <h2 class="text-2xl font-bold text-apple-teal dark:text-apple-teal mb-4">Tips & Strategies</h2>
+                <div class="prose dark:prose-invert max-w-none">
+                    <p class="mb-4">Here are some tips to help you survive longer in Monster Survivors:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Focus on movement speed early to help avoid being surrounded</li>
+                        <li>Balance offensive and defensive upgrades for better survival</li>
+                        <li>Don't stay in one place for too long - keep moving to avoid being overwhelmed</li>
+                        <li>Prioritize area-of-effect weapons when facing large groups of enemies</li>
+                        <li>Pay attention to power-up synergies to maximize your combat effectiveness</li>
                     </ul>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </article>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-apple-black text-white mt-12 py-6">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; 2024 Monster Survivors. All rights reserved.</p>
+    <footer class="bg-apple-blue text-white p-6 mt-8">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">HockeyShaft</h3>
+                    <p>Your destination for free online games. Play the best browser games without downloads!</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-apple-yellow transition">Home</a></li>
+                        <li><a href="/games" class="hover:text-apple-yellow transition">All Games</a></li>
+                        <li><a href="/categories" class="hover:text-apple-yellow transition">Categories</a></li>
+                        <li><a href="/new" class="hover:text-apple-yellow transition">New Games</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/privacy" class="hover:text-apple-yellow transition">Privacy Policy</a></li>
+                        <li><a href="/terms" class="hover:text-apple-yellow transition">Terms of Service</a></li>
+                        <li><a href="/cookies" class="hover:text-apple-yellow transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-apple-teal text-center">
+                <p>&copy; 2025 HockeyShaft.com. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        // Check for dark mode preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </body>
 </html>
